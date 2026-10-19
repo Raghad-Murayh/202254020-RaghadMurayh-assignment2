@@ -14,3 +14,18 @@ themeButton.addEventListener("click", function () {
         localStorage.setItem("theme", "light");
     }
 });
+// Project filtering
+const projectFilter = document.getElementById("project-filter");
+const projectCards = document.querySelectorAll(".project-card");
+projectFilter.addEventListener("change", function () {
+    const selectedFilter = projectFilter.value;
+    projectCards.forEach(function (card) {
+        const projectCategory = card.dataset.category;
+        if (selectedFilter === "all" ||
+            selectedFilter === projectCategory) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});

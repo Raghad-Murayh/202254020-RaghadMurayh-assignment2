@@ -106,7 +106,17 @@ section h1 {
 
 
 /* Projects */
+#project-filter {
+    padding: 8px 12px;
+    margin-left: 8px;
+    margin-bottom: 25px;
 
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
 .projects-container {
     display: flex;
     gap: 30px;
@@ -194,6 +204,11 @@ footer {
 body.dark-mode {
     background-color: #121212;
     color: #f5f5f5;
+}
+body.dark-mode #project-filter {
+    background-color: #242424;
+    color: white;
+    border-color: #555;
 }
 
 body.dark-mode .project-card {
