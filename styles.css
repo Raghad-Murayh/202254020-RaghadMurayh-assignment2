@@ -186,7 +186,9 @@ form button {
 form button:hover {
     background-color: #444;
 }
-
+#form-feedback {
+    font-weight: bold;
+}
 
 /* Footer */
 

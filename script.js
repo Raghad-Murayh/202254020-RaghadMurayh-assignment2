@@ -29,3 +29,11 @@ projectFilter.addEventListener("change", function () {
         }
     });
 });
+// Contact form feedback
+const contactForm = document.getElementById("contact-form");
+const formFeedback = document.getElementById("form-feedback");
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    formFeedback.textContent =
+        "Thank you! Your form was submitted successfully.";
+});
