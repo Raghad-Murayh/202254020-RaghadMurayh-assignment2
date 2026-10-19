@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2 class="logo">My Portfolio</h2>
+
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+                <button id="theme-toggle">🌙 Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- About Me -->
+        <section id="about">
+
+            <h1>About Me</h1>
+
+            <p class="tagline">
+                Software Engineering Student at KFUPM
+            </p>
+
+            <p>
+                I'm Raghad Murayh, a Software Engineering student at KFUPM with an interest in programming and software development.
+                 I enjoy working on different projects, learning from new challenges, and continuously developing my technical skills.
+            </p>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects">
+
+            <h1>My Projects</h1>
+
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                    <img
+                        src="assets/image/project1.png"
+                        alt="Screenshot of Project 1"
+                    >
+
+                    <h2>Hospital Appointment System</h2>
+
+                    <p>
+                        A database management system that allows hospital
+                         administrators to schedule patient visits
+                         and enables doctors to view their daily appointments.
+                    </p>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="project-card">
+
+                    <img
+                        src="assets/image/project2.png"
+                        alt="Screenshot of Project 2"
+                    >
+
+                    <h2>Student Assignment planner</h2>
+
+                    <p>
+                        A simple, web-based to-do list that helps students organize and track 
+                        their homework, quizzes, and project deadlines by course.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h1>Contact Me</h1>
+
+            <form>
+
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 RAGHAD MURAYH</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
